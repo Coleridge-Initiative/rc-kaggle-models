@@ -1,0 +1,14 @@
+.
+./saved_models
+./saved_models/biomed_roberta_base
+./saved_models/biomed_roberta_base/run1
+./saved_models/scibert-base-cased
+./saved_models/scibert-base-cased/run1
+./pretrained
+./pretrained/biomed_roberta_base
+./pretrained/scibert-base-cased
+./processed_data
+./data
+./data/train
+./data/test
+./notebooks

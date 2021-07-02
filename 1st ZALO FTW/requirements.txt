@@ -1,0 +1,14 @@
+tensorflow_addons==0.13.0
+transformers==4.4.2
+tqdm==4.57.0
+click==7.1.2
+numpy==1.19.5
+nltk==3.4.4
+pandas==1.2.2
+tensorflow_gpu==2.4.1
+scikit_learn==0.24.2
+pandarallel==1.5.2
+pqdm==0.1.0
+spacy==3.0.6
+torch==1.7.1
+kaggle==1.5.12
