@@ -21,6 +21,7 @@ If you run into any trouble with the setup/code or have any questions please con
 14. train.py                                : A script for training model
 15. training.sh                             : A sh script for training all model
 
+*Data and saved models are too big, thus stored at Google Drive, you could access them [here](https://drive.google.com/drive/folders/1uMqsAmkMx89HLXZBLlKOuhkpRyf-gBRe?usp=sharing)*
 
 ### HARDWARE: (The following specs were used to create the original solution)
 Deep Learning AMI (Ubuntu 18.04) Version 46.0 AWS EC2
