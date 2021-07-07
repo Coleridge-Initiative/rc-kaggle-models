@@ -18,3 +18,6 @@ GPU Specifications:
 TPU Specifications:
 - 4 CPU cores
 - 16 Gigabytes of RAM
+
+## Google Drive
+To access certain files that are too big to store here, please click [here](https://drive.google.com/drive/folders/1TEzNe2MMHQpGz-Y9E2W9o7tsIr3IpCh_?usp=sharing) for complete files. 
