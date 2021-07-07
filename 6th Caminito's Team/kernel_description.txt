@@ -1,0 +1,43 @@
+ESPAÑOL
+
+in[5]: Se decidió concatenar todos los textos y se trabajo con la variable all_data.
+in[13]: Se uso el script de AbbreviationDetector proveniente de "https://github.com/allenai/scispacy".
+in[14]: Carga modelo de spacy, pero solo para utilizar el entity_ruler (Es decir lo utilizamos solo para el matcheo de strings).
+in[16]: Se cargan ORG (no set de datos) en la variable "list3" y dataset en la variable "list2", ambos listados fueron obtenidos de los documentos provistos por la competencia y seleccionados a mano.
+in[17]:nlp2(Ensemble_30000_textcat) = Modelo de categorización de texto entrenado con 30000 sentencias, que selecciona sentencias positivas("SI") para un dataset.
+      nlp3(NER-LAST-VEC-1100-RULER) = Modelo que utiliza entidades nombradas para detectar dataset.
+      nlp4(Ensemble_3000_dataset_vs_ORG) = Modelo de categorización de texto entrenado con list2 y list3 para diferenciar dataset de ORG.
+
+in[20]: 
+        1) Se cortan los documentos para que no excedan el millon de caracteres.
+        2) Se genera una lista de abreviaciones (abvr_list) del papper que excluye elementos de list3, acronimos con las siglas "AD", acronimos en minusculas y formas largas en minusculas.
+        3) En este script (if ent.label_ == "RULDATA"), se realiza un matcheo de strings, si existen en abvr_list, sino, incorpora solo los que tienen una logitud mayor a 2 palabras.
+        4) Creo vectores de todas los dataset encontrados hasta el momento, lo que me permitirá eliminar duplicados (labels_vec).
+        5) (for sent in doc.sents:) desde acá se recorren cada una de las sentencias, se analizan las que tienen entre 7 y 100 tokens, se categorizan con nlp2 para ver si contienen o no un dataset y luego 
+ se revisan sus entidades (DATASET), con el modelo que entrenamos (nlp3).
+        6) Si esta en la abvr_list y no esta en labels_vec_set se agrega el dataset.
+        7) Sino esta, se calcula el vector de la entidad, se analiza la entidad con el categorizador de texto para que confirme si es un DATASET o no y luego con los vectores, se descarta la entidad por simililaridad si ya existe en labels_vec.
+        8) nlp_labels contiene todos los DATASET considerados positivos, se los limpia y se lo incorpora al archivo para hacer el submit.
+
+INGLES
+
+in [5]: It was decided to concatenate all the texts and work with the all_data variable.
+in [13]: AbbreviationDetector script from "https://github.com/allenai/scispacy" was used.
+in [14]: Load spacy model, but only to use the entity_ruler (we only use it for string matching).
+in [16]: ORG (no data set) are loaded in the variable "list3" and dataset in the variable "list2", both lists were obtained from the documents provided by the competition and selected by some models or by hand.
+in [17]: nlp2 (Ensemble_30000_textcat) = Text categorization model trained with 30,000 sentences, which selects positive ("IF") sentences for a dataset.
+      nlp3 (NER-LAST-VEC-1100-RULER) = Model that uses named entities to detect dataset.
+      nlp4 (Ensemble_3000_dataset_vs_ORG) = Text categorization model trained with list2 and list3 to differentiate dataset from ORG.
+
+in [20]:
+        1) Documents are cut so that they do not exceed one million characters.
+        2) A list of abbreviations (abvr_list) of the papper is generated that excludes elements of list3, acronyms with the initials "AD", acronyms in lowercase and long forms in lowercase.
+        3) In this script (if ent.label_ == "RULDATA"), a matching of strings is carried out, if they exist in abvr_list, otherwise, it only incorporates those with a length greater than 2 words.
+        4) I create vectors of all the datasets found so far, which will allow me to remove duplicates (labels_vec).
+        5) (for sent in doc.sents:) from here each of the sentences are traversed, those with between 7 and 100 tokens are analyzed, they are categorized with nlp2 to see if they contain a dataset or not and then
+ its entities (DATASET) are reviewed, with the model we trained (nlp3).
+        6) If DATASET is in the abvr_list and it is not in labels_vec_set, the dataset is added.
+        7) If not, the entity vector is calculated, the entity is analyzed with the text categorizer to confirm if it is a DATASET or not and then with the vectors, the entity is discarded due to similarity if it already exists in labels_vec.
+        8) nlp_labels contains all the DATASETs considered positive, it is cleaned and incorporated into the file to make the submit. 
+     
+        

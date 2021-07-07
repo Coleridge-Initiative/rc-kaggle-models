@@ -1,0 +1,16 @@
+{
+    "RAW_DATA_DIR": "./data/",
+    "TRAIN_IDS": "./lib/train_ids.json",
+    "TRAIN_DATA_CLEAN_DIR": "./data/processed/train/",
+    "TEST_DATA_CLEAN_DIR": "./data/processed/test/",
+    "TRAIN_DATA_CLEAN_PATH": "./data/processed/train/train.spacy",
+    "VALID_DATA_CLEAN_PATH": "./data/processed/train/valid.spacy",
+    "TEST_DATA_CLEAN_PATH": "./data/processed/test/test.csv",
+    "TEST_TEXTCAT_DATA_PATH": "./data/processed/test/textcat.json",
+    "TEST_NAIVE_PREDICTIONS_DATA_PATH": "./data/processed/test/naive_preds.json",
+    "TEST_DATA_GROUP_PATH": "./data/processed/test/groups.json",
+    "TEST_ABB_DEF_MAPPINGS_PATH": "./data/processed/test/abb_def_mappings.json",
+    "MODEL_CHECKPOINT_DIR": "./models/",
+    "LOGS_DIR": "./logs/",
+    "SUBMISSION_DIR": "./submissions/"
+}
