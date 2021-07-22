@@ -1,7 +1,7 @@
 Hello!
 
-Below you can find a outline of how to reproduce our solution for the Coleridge Initiative - Show US the Data competition.
-If you run into any trouble with the setup/code or have any questions please contact us at nguyenquananhminh@gmail.com and tuankhoi94@gmail.com
+Below is a outline of how to reproduce their solution for the Coleridge Initiative - Show US the Data competition.
+The files and codes are provided by [Khoi Nguyen](https://www.kaggle.com/suicaokhoailang) and [Nguyen Quan Anh Minh](https://www.kaggle.com/dathudeptrai).
 
 ### ARCHIVE CONTENTS
 

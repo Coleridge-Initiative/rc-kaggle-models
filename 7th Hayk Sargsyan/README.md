@@ -2,8 +2,8 @@
 
 Hello!
 
-Below you can find a outline of how to reproduce my solution for the Coleridge Initiative - Show US the Data competition.
-If you run into any trouble with the setup/code or have any questions please contact me at srg.hayk@gmail.com
+Below is a outline of how to reproduce the solution for the Coleridge Initiative - Show US the Data competition.
+The files and codes are provided by [Hayk Sargsyan](https://www.kaggle.com/sarhayk).
 
 ## ARCHIVE CONTENTS
 - `models/model-best`: contains the model binaries used in generating the solution
@@ -27,7 +27,7 @@ If you run into any trouble with the setup/code or have any questions please con
 - nvidia drivers 460.73.01
 
 ## DATA SETUP
-assumes the [Kaggle API](https://github.com/Kaggle/kaggle-api is installed.
+assumes the [Kaggle API](https://github.com/Kaggle/kaggle-api) is installed.
 
 ```bash
 $ cd data
