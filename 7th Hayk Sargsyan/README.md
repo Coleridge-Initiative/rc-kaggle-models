@@ -27,7 +27,7 @@ The files and codes are provided by [Hayk Sargsyan](https://www.kaggle.com/sarha
 - nvidia drivers 460.73.01
 
 ## DATA SETUP
-assumes the [Kaggle API](https://github.com/Kaggle/kaggle-api is installed.
+assumes the [Kaggle API](https://github.com/Kaggle/kaggle-api) is installed.
 
 ```bash
 $ cd data
