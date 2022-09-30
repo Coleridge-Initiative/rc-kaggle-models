@@ -21,7 +21,7 @@ The files and codes are provided by [Khoi Nguyen](https://www.kaggle.com/suicaok
 14. train.py                                : A script for training model
 15. training.sh                             : A sh script for training all model
 
-*Data and saved models are too big, thus stored at Google Drive, you could access them [here](https://drive.google.com/drive/folders/1uMqsAmkMx89HLXZBLlKOuhkpRyf-gBRe?usp=sharing)*
+*Data and saved models are too big, thus stored at Google Drive, you could access them [here](https://drive.google.com/drive/folders/1th-9gxl0tXYZtzb50W0QVSTZNA9LgLM3?usp=sharing)*
 
 ### HARDWARE: (The following specs were used to create the original solution)
 Deep Learning AMI (Ubuntu 18.04) Version 46.0 AWS EC2
